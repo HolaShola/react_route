@@ -10,7 +10,7 @@ import Component_3 from './components/component_3';
 function App() {
     return (
         <div>
-            Hello
+            Hello hello
         </div>
     );
 }
