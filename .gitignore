@@ -1,0 +1,9 @@
+# webpack generated files #
+build.js
+
+# Node Files #
+/node_modules/
+
+# IDE #
+.idea/
+*.swp
