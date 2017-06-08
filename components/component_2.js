@@ -5,7 +5,7 @@ export default function Component_2() {
     return (
         <ul>
             {
-                repos.map(repo => (<li>{repo}</li>))
+                repos.map(repo => (<li key={repo}>{repo}</li>))
             }
         </ul>
     );

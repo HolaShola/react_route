@@ -12,9 +12,9 @@ function App(props) {
     return (
         <div>
             Hello hello
-            <Link to="/component1">Component1</Link>
-            <Link to="/component2">Component2</Link>
-            <Link to="/component3">Component3</Link>
+            <Link to="/comp1">Component1</Link>
+            <Link to="/comp2">Component2</Link>
+            <Link to="/comp3">Component3</Link>
             {props.children}
         </div>
     );
@@ -22,10 +22,12 @@ function App(props) {
 
 ReactDOM.render((
     <Router history={hashHistory}>
-        <Route path="/" component={App} />
-        <Route path="/comp1" component={Component_1} />
-        <Route path="/comp2" component={Component_2} />
-        <Route path="/comp3" component={Component_3} />
+        <Route path="/" component={App} >
+            <Route path="/comp1" component={Component_1} />
+            <Route path="/comp2" component={Component_2} />
+            <Route path="/comp2/:id" component={Repo} />
+            <Route path="/comp3" component={Component_3} />
+        </Route>
         <Route path="*" component={NotFound} />
     </Router>),
     document.querySelector('#root')
