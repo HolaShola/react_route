@@ -5,7 +5,6 @@ export default class Component_2 extends React.Component{
         return (
             <div className='converter'>
                 <h3>Distance converter</h3>
-                <ChooseMe value={["Cm", "Dm", "M"]}/>
             </div>
         );
     }

@@ -5,7 +5,6 @@ export default class Component_3 extends React.Component{
         return (
             <div className='converter'>
                 <h3>Currencie converter</h3>
-                <InputTwoValue />
             </div>
         );
     }

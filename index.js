@@ -18,6 +18,9 @@ function App() {
 ReactDOM.render((
     <Router history={hashHistory}>
         <Route path="/" component={App} />
+        <Route path="/component1" component={Component_1} />
+        <Route path="/component2" component={Component_2} />
+        <Route path="/component3" component={Component_3} />
         <Route path="*" component={NotFound} />
     </Router>),
     document.querySelector('#root')
